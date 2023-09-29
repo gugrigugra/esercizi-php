@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>argomenti</title>
+	</head>
+	<body>
+		<form action="process.php" method="post">
+			<label for="nome">Nome:</label>
+			<input type="text" id="nome" name="nome" required /><br /><br />
+
+			<label for="password">password:</label>
+			<input placeholder="la password è password" type="password" id="password" name="password" required /><br /><br />
+
+			<h2>Argomenti da Approfondire:</h2>
+			<input type="checkbox" id="html" name="argomenti[]" value="html" />
+			<label for="html">Informazioni su HTML</label><br />
+
+			<input
+				type="checkbox"
+				id="immagini"
+				name="argomenti[]"
+				value="immagini"
+			/>
+			<label for="immagini">Immagini</label><br />
+
+			<input
+				type="checkbox"
+				id="collegamenti"
+				name="argomenti[]"
+				value="collegamenti"
+			/>
+			<label for="collegamenti">Collegamenti e URL</label><br />
+
+			<input
+				type="checkbox"
+				id="multimedia"
+				name="argomenti[]"
+				value="multimedia"
+			/>
+			<label for="multimedia">Oggetti Multimediali</label><br />
+
+			<input type="checkbox" id="xhtml" name="argomenti[]" value="xhtml" />
+			<label for="xhtml">XHTML versione 1.0</label><br /><br />
+
+			<input type="submit" value="Invia" name="submit" />
+		</form>
+	</body>
+</html>

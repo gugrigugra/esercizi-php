@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>squadre calcio</title>
+	</head>
+	<body>
+		<h1>Inserisci Dati Squadre</h1>
+		<form id="squadre-form" action="process.php" method="POST">
+			<label for="squadra1">Squadra 1:</label>
+			<input type="text" id="squadra1" name="squadra1" required />
+			<br />
+			<label for="vittorie1">Partite Vinte:</label>
+			<input type="number" id="vittorie1" name="vittorie1" required />
+			<br />
+			<label for="pareggi1">Partite Pareggiate:</label>
+			<input type="number" id="pareggi1" name="pareggi1" required />
+			<br />
+			<label for="sconfitte1">Partite Perse:</label>
+			<input type="number" id="sconfitte1" name="sconfitte1" required />
+			<br /><br />
+
+			<label for="squadra2">Squadra 2:</label>
+			<input type="text" id="squadra2" name="squadra2" required />
+			<br />
+			<label for="vittorie2">Partite Vinte:</label>
+			<input type="number" id="vittorie2" name="vittorie2" required />
+			<br />
+			<label for="pareggi2">Partite Pareggiate:</label>
+			<input type="number" id="pareggi2" name="pareggi2" required />
+			<br />
+			<label for="sconfitte2">Partite Perse:</label>
+			<input type="number" id="sconfitte2" name="sconfitte2" required />
+			<br /><br />
+
+			<button type="submit">Invia</button>
+		</form>
+	</body>
+</html>

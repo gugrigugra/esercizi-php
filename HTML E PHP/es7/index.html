@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>conversione ASCII</title>
+	</head>
+	<body>
+		<h1>Trasformazione Carattere / Codice ASCII</h1>
+		<form method="POST" action="process.php">
+			<label for="input">Inserisci un Carattere o un Codice ASCII:</label>
+			<input type="text" id="input" name="input" required />
+			<br />
+			<label>Trasformazione desiderata:</label>
+			<input
+				type="radio"
+				id="carattereToAscii"
+				name="trasformazione"
+				value="carattereToAscii"
+				required
+			/>
+			<label for="carattereToAscii">Carattere a Codice ASCII</label>
+			<input
+				type="radio"
+				id="asciiToCarattere"
+				name="trasformazione"
+				value="asciiToCarattere"
+				required
+			/>
+			<label for="asciiToCarattere">Codice ASCII a Carattere</label>
+			<br /><br />
+			<input type="submit" value="Esegui Trasformazione" />
+		</form>
+	</body>
+</html>

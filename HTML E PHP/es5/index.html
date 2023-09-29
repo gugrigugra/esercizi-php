@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>abbonamento palestra</title>
+	</head>
+	<body>
+		<h1>Calcolatore Prezzo</h1>
+		<form id="prezzo-form" action="process.php" method="POST">
+			<label for="nome">Nome:</label>
+			<input type="text" id="nome" name="nome" required />
+			<br />
+			<label for="eta">Età:</label>
+			<input type="number" id="eta" name="eta" required />
+			<br />
+			<label for="frequenza">Frequenza di Pagamento:</label>
+			<select id="frequenza" name="frequenza" required>
+				<option value="mensile">Mensile</option>
+				<option value="bimestrale">Bimestrale</option>
+				<option value="trimestrale">Trimestrale</option>
+				<option value="annuale">Annuale</option>
+			</select>
+			<br /><br />
+			<button type="submit">Calcola Prezzo</button>
+		</form>
+
+		<table border="1">
+			<tr>
+				<td>Frequenza di pagamento</td>
+				<td>Percentuale di sconto</td>
+			</tr>
+			<tr>
+				<td>
+                    <ul>
+                        <li>Mensile</li>
+                        <li>Bimestrale</li>
+                        <li>Trimestrale</li>
+                        <li>Annuale</li>
+                    </ul>
+                </td>
+				<td>
+                    <ul>
+                        <li>nessuno sconto</li>
+                        <li>10%</li>
+                        <li>15%</li>
+                        <li>20%</li>
+                    </ul>
+                </td>
+			</tr>
+		</table>
+	</body>
+</html>

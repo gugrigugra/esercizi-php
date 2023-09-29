@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>form</title>
+	</head>
+
+	<body>
+		<p>modulo di rilevazione temperatura</p>
+		<form action="process.php" method="post">
+			<label for="localita">Località</label>
+			<input type="text" name="localita" id="localita" required />
+
+			<br />
+
+			<label for="data">data</label>
+			<input type="date" name="data" id="data" required />
+
+			<br />
+
+			<label for="ora">ora</label>
+			<input type="time" name="ora" id="ora" required />
+
+			<br />
+
+			<label for="tipo-rilevazione">tipo rilevazione</label>
+
+			<input type="radio" name="tipo-rilevazione" id="ofc" value="OFC" />
+			<label for="ofc">OFC</label>
+
+			<input type="radio" name="tipo-rilevazione" id="amb" value="AMB" />
+			<label for="amb">AMB</label>
+
+			<input type="radio" name="tipo-rilevazione" id="dra" value="DRA" />
+			<label for="dra">DRA</label>
+
+			<br />
+
+			<label for="umidita">umidita</label>
+			<select name="umidita" id="umidita" required>
+				<option value="assoluta">assoluta</option>
+				<option value="relativa">relativa</option>
+			</select>
+			<br />
+			<label for="clima">clima attuale</label>
+			<select name="clima" id="clima" required>
+				<option value="pioggia">pioggia</option>
+				<option value="sereno">sereno</option>
+				<option value="ventoso">ventoso</option>
+				<option value="umido">umido</option>
+				<option value="foschia">foschia</option>
+			</select>
+			<br />
+			<input type="submit" value="invia rilevazione" />
+		</form>
+	</body>
+</html>

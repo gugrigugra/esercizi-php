@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>tv</title>
+	</head>
+	<body>
+		<h1>Inserisci Caratteristiche TV</h1>
+		<form id="tv-form" action="process.php" method="POST">
+			<label for="marca">Marca:</label>
+			<input type="text" id="marca" name="marca" required />
+			<br />
+			<label for="modello">Modello:</label>
+			<input type="text" id="modello" name="modello" required />
+			<br />
+			<label for="porte_hdmi">Numero di Porte HDMI:</label>
+			<input type="number" id="porte_hdmi" name="porte_hdmi" required />
+			<br />
+			<label for="refresh_rate">Refresh Rate (Hz):</label>
+			<input
+				type="number"
+				id="refresh_rate"
+				name="refresh_rate"
+				min="1"
+				required
+			/>
+			<br />
+			<label for="risoluzione">Risoluzione dello Schermo:</label>
+			<select id="risoluzione" name="risoluzione" required>
+				<option value="HD Ready">HD Ready</option>
+				<option value="Full HD">Full HD</option>
+				<option value="Ultra HD">Ultra HD</option>
+				<option value="4K">4K</option>
+			</select>
+			<br /><br />
+			<button type="submit">Invia</button>
+		</form>
+	</body>
+</html>
