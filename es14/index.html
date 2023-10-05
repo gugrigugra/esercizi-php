@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>operatori php</title>
+	</head>
+	<body>
+		<h1>Operazioni Bit a Bit</h1>
+		<form method="post" action="process.php">
+			<label for="numero">Inserisci un numero:</label>
+			<input type="number" name="numero" id="numero" required />
+			<br /><br />
+			<input type="radio" name="operazione" value="shift_destro" required />
+			<label for="shift_destro">Shift Destro</label>
+			<br />
+			<input type="radio" name="operazione" value="shift_sinistro" />
+			<label for="shift_sinistro">Shift Sinistro</label>
+			<br />
+			<input type="radio" name="operazione" value="not" />
+			<label for="not">NOT</label>
+			<br /><br />
+			<input type="submit" value="Calcola" />
+		</form>
+	</body>
+</html>

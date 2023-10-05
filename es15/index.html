@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>operazioni logiche</title>
+	</head>
+	<body>
+		<h1>Operazioni Logiche</h1>
+		<form method="post" action="process.php">
+			<label for="numero1">Inserisci il primo numero:</label>
+			<input type="number" name="numero1" id="numero1" required />
+			<br /><br />
+			<label for="numero2">Inserisci il secondo numero:</label>
+			<input type="number" name="numero2" id="numero2" required />
+			<br /><br />
+			<input type="radio" name="operazione" value="and" required />
+			<label for="and">AND</label>
+			<br />
+			<input type="radio" name="operazione" value="or" />
+			<label for="or">OR</label>
+			<br />
+			<input type="radio" name="operazione" value="xor" />
+			<label for="xor">XOR</label>
+			<br /><br />
+			<input type="submit" value="Calcola" />
+		</form>
+	</body>
+</html>
